@@ -419,7 +419,7 @@ def generate_excel_output(problem_name, all_results, national_years=range(2023, 
 
 
 if __name__ == '__main__':
-    import c01  # 修改为导入C02问题
+    import c01
 
     problemModule = [c01]
     print("================================================================================")
@@ -466,4 +466,5 @@ if __name__ == '__main__':
         generate_excel_output(m.__name__, all_run_results)
 
         print(f"\n优化完成！最优解编号为: {optimal_index}")
+
         print("================================================================================")
